@@ -27,5 +27,9 @@ function wipebroni()
 end
 
 RegisterCommand("wipebroni", function(source, args, rawCommand)
-    wipebroni()
+    if checkcon then
+        wipebroni()
+    else
+         print("the database is not ready...")
+    end
 end, false)
